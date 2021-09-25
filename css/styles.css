@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.site-container {
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: Gill-Sans;
+  src: url(../css/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: Proxima-Nova-thin;
+  src: url(../css/fonts/Proxima-Nova-Thin.otf);
+}
+@font-face {
+  font-family: Proxima-Nova-extra-condensed;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: GillSans;
+  src: url(../css/fonts/GillSans.ttc);
+}
+nav {
+  position: fixed;
+  width: 55%;
+  height: 92.5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid 2px white;
+}
+nav .logo {
+  width: 136px;
+  height: 42px;
+  color: white;
+  background-image: url(../images/logo/logo-white.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav .links {
+  height: 42px;
+  width: 430px;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+  font-family: GillSans;
+  font-size: 15px;
+  padding: 10px;
+}
+nav .links a span {
+  margin-left: 10px;
+}
+
+.home {
+  width: 1280px;
+  min-height: 800px;
+}
+.home .hero {
+  width: 100%;
+  height: 500px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(1, 1, 1, 0.5))), url(../../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(1, 1, 1, 0.5)), url(../../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+}
+.home .hero .center-note {
+  width: 714px;
+  max-height: 50px;
+  margin: 0 auto;
+}
+.home .hero .travel-fly {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: Proxima-Nova-extra-condensed;
+  margin-bottom: 30px;
+}
+.home .hero .intro-paragraph {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: Proxima-Nova-extra-condensed;
+}
+.home .hero .read-more {
+  background-color: #7acdfe;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  width: 121px;
+  height: 40px;
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+.home .promo-holder {
+  width: 1280px;
+  height: 304px;
+}
+.home .promo-holder .promo-trips {
+  width: 873px;
+  height: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -74px auto 0 auto;
+}
+.home .promo-holder .promo-trips .isreal {
+  width: 236px;
+  height: 304px;
+  background-image: url(../../images/tour/tour-israel/israel-tour-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .promo-holder .promo-trips .usa {
+  width: 236px;
+  height: 304px;
+  background-image: url(../../images/tour/tour-usa/usa-tour-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .promo-holder .promo-trips .austrailia {
+  width: 236px;
+  height: 304px;
+  background-image: url(../../images/tour/tour-aus/aus-tour-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .promo-holder .promo-trips .promos {
+  width: 236px;
+  height: 304px;
+  color: white;
+  background-color: lightblue;
+}
+.home .promo-holder .promo-trips .promos .title {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: Proxima-Nova-extra-condensed;
+}
+.home .promo-holder .promo-trips .promos .price {
+  text-align: center;
+  font-size: 30px;
+  font-family: Proxima-Nova-extra-condensed;
+}
+.home .promo-holder .promo-trips .promos .learn-more {
+  font-size: 15px;
+  font-family: Gill-Sans;
+  text-align: center;
+  margin: 50px;
+  padding: 5px;
+  background-color: #7acdfe;
+  border-radius: 15px;
+}
+.home .booking {
+  min-height: 400px;
+  background-color: lightblue;
+  padding: 50px;
+}
+.home .booking .booking-wrapper {
+  max-width: 818px;
+  margin: 0 auto;
+  border: solid 1px pink;
+}
+.home .booking .booking-wrapper h1 {
+  font-size: 60px;
+  text-align: left;
+}
+.home .booking .booking-wrapper .long-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home .booking .booking-wrapper .input-holder {
+  display: block;
+  width: 50%;
+}
+.home .booking .booking-wrapper .input-holder1 {
+  display: block;
+  width: 50%;
+}
+.home .booking .booking-wrapper label {
+  display: inline;
+}
+.home .booking .booking-wrapper input {
+  width: 698px;
+  height: 58px;
+  border: solid 1px #7acdfe;
+}
+
+footer {
+  height: 100px;
+  background-color: #79addc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 150px;
+}
+footer .logo {
+  width: 75px;
+  height: 60px;
+  color: white;
+  background-image: url(../images/logo/logo-white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .copyright {
+  color: white;
+  font-family: Gill-Sans;
+  font-size: 12px;
+}
+footer .social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .social-medias .facebook {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: green;
+  margin-right: 21px;
+}
+footer .social-medias .instagram {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: yellow;
+  margin-right: 21px;
+}
+footer .social-medias .twitter {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: red;
+}
